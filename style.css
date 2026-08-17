@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+    max-width: 80%;
+    margin-top: 40px;
+
+}
+
+.card {
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 15px 30px hsl(0, 0%, 7%);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.name  p {
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+.p-frist {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+
+}
+
+.p-last {
+    font-size: 13px;
+    line-height: 1.4;
+    opacity: 0.5;
+}
+
+.card-dan {
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 60px;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    grid-column: span 2 / span 2;
+}
+
+.card-jon {
+    background-color: hsl(224, 10%, 45%);
+    color: hsl(0, 0%, 100%);
+    grid-column-start: 3;
+}
+
+
+.card-jea {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 7%);
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.card-pat {
+    background-color: hsl(219, 29%, 14%);
+    color:  hsl(0, 0%, 100%);
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.card-kir {
+    background-color:  hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 7%);
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
